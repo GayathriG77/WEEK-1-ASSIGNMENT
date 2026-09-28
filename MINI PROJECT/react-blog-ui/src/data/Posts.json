@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to React",
+    "category": "React",
+    "description": "Learn the basics of React and understand how components work."
+  },
+  {
+    "id": 2,
+    "title": "JavaScript Basics",
+    "category": "JavaScript",
+    "description": "Learn important JavaScript concepts for frontend development."
+  },
+  {
+    "id": 3,
+    "title": "Understanding CSS",
+    "category": "CSS",
+    "description": "Learn how CSS is used to design and style web pages."
+  },
+  {
+    "id": 4,
+    "title": "React Components",
+    "category": "React",
+    "description": "Understand reusable components in React applications."
+  },
+  {
+    "id": 5,
+    "title": "Introduction to Node.js",
+    "category": "Node.js",
+    "description": "Learn what Node.js is and how it is used in web development."
+  }
+]

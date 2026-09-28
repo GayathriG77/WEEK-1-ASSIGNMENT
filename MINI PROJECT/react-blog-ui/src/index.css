@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* Header */
+
+.header {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 35px 20px;
+}
+
+.header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.header p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Search and Filter */
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 20px;
+}
+
+.search-container input,
+.search-container select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.search-container input {
+  width: 50%;
+}
+
+/* Blog Cards */
+
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.post-card {
+  background-color: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-card h2 {
+  margin: 8px 0 12px;
+}
+
+.category {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.description {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Button */
+
+.read-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.read-button:hover {
+  background-color: #444;
+}
+
+/* No posts */
+
+.no-posts {
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .posts-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-container input {
+    width: 90%;
+  }
+
+  .search-container select {
+    width: 95%;
+  }
+
+  .posts-container {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+}
